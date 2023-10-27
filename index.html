@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- 🌵 Made with Needle — https://needle.tools -->
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://orphnahk.github.io/hometeam-quiz.git/include/poster.webp">
+  <meta name="og:image" content="https://orphnahk.github.io/hometeam-quiz.git/include/poster.webp">
+  <meta name="og:image:width" content=1080>
+  <meta name="og:image:height" content=1080>
+  <meta name="og:title" content="Main Map">
+  <meta name="generator" content="Unity 2023.1.12f1, Needle Engine Integration @3.20.1">
+  <meta name="needle-engine" content="3.20.4">
+
+        <meta charset="UTF-8" />
+        <link rel="icon" href="./assets/favicon-8d99ceea.ico">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <title>Main Map</title>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+        <meta name="url" content="https://orphnahk.github.io/hometeam-quiz.git">
+
+        
+        
+        <script src="js/questions.js"></script>
+      <script type="module" crossorigin src="./assets/index-d3d9645d.js"></script>
+      <link rel="stylesheet" href="./assets/index-62820901.css">
+    </head>
+
+    <body>
+      <script>/* needle: injected fix for peerjs */
+window.global = window;
+var parcelRequire;</script>
+
+        <a id="downloadLink" style="display: none;">Download QR Code</a>
+        
+        
+        
+        <div id="unity-container" class="unity-desktop">
+            <needle-engine loadfinished="onLoadFinished" loading-logo-src="./images/left.png"></needle-engine>            
+            <div id="landing" class="ui-page">
+                <img id="left-img" src="./assets/left-397687ed.png" alt="left-img"/>
+                <img id="right-img" src="./assets/right-f47bdfa7.png" alt="right-img"/>
+                <img id="landing-img" src="./assets/landing-a812e990.png" alt="landing-img"/>
+            </div>
+
+            <div id="instruction" class="ui-page">
+                <img id="instruction-img" src="./assets/Instruction-b5d50133.png" alt="terte-img"/>
+                <div id="hint-txt" class="txt-10">
+                    <p>Tip: Visit the Home Team Careers Area in the Yellow Zone<br>before attempting this quiz!</p>
+                    <p id="guide-txt">Click anywhere to begin playing when you are ready!</p>
+                </div>
+                <img id="countdown-img" src="./assets/3-9abc935d.png" alt="countdown-img"/>
+            </div>
+
+            <div id="ingame" class="ui-page">
+                <div id="question-div">
+                    <p class="txt-18">Question:</p>
+                    <div id="question-txt" class="txt-13">
+                    </div>
+                </div>
+                <div id="wrong-div">
+                    <img id="wrong-img" src="./assets/wrong-42390425.png" alt="wrong-img"/>
+                </div>
+                <div id="correct-div">
+                    <div id="correct-div-popup">
+                        <p class="txt-18">That's right!</p>
+                        <div id="fact-content" class="txt-11">
+                            <div id="fact-txt"></div>
+                        </div>
+                        <img id="continue-img" src="./assets/continue-3b258a46.png" alt="continue-img"/>
+                    </div>
+                </div>
+            </div>
+
+            <div id="phone-div" class="ui-page">
+                <img id="welldone-img" src="./assets/well_done-44456c15.png" alt="welldone-img"/>
+                <p class="txt-15 big-txt">You have answered all questions!</p>
+                <p class="txt-11 small-txt">Please enter your phone number to receive an OTP.<br>
+                    Each phone number can only be used once.</p>
+                <div id="phone-input-container">
+                    <div id="phone_input">
+                        <input id="phone-number" class="txt-15" type="text" name="phone_number" autocomplete="off"/>
+                    </div>
+                    <img id="phone-img" src="./assets/phone_img-d8e9247c.png" alt="phone_img"/>
+                </div>
+
+                <input type="button" id="send-otp" class="txt-18 big-txt" value="Send OTP"/>
+            </div>
+
+            <div id="otp-div" class="ui-page">
+                <img id="welldone-img" src="./assets/well_done-44456c15.png" alt="welldone-img"/>
+                <p class="txt-15 big-txt">Verification Code!</p>
+                <p id="otp-message" class="txt-11 small-txt">Please type the verification code<br>sent to +65 XXXX YYYY</p>
+                <div id="otp-input-container">
+                    <input id="otp-code" class="txt-15" type="number" name="otp_code" autocomplete="off"/>
+                </div>
+
+                <input type="button" id="verify-otp" class="txt-18 big-txt" value="Verify"/>
+            </div>
+
+            <div id="qr-div" class="ui-page">
+                <img id="verify-success-img" src="./assets/verify_success-b2e6c7bb.png" alt="verify-success-img"/>
+                <div id="qr-code"></div>
+                <div id="qr-note">
+                    <img id="phone-icon" src="./assets/phone_img2-98e75954.png" alt="qr-img"/>
+                    <p class="txt-10">IMPORTANT: Tap the QR code to save it to your device. Present the QR code at the Redemption Booth at the Home Team Careers Area to redeem the limited edition Home Team card game.</p>
+                </div>
+            </div>
+
+            <div id="popup" class="ui-page">
+                <div id="popup-content">
+                    <p class="txt-18">QELKJLKWJLE qweqw qwe qwe qwe qwe qw</p>
+                </div>
+            </div>
+            
+            <div id="copyright">Copyright © 2023 Ministry of Home Affairs. All Rights Reserved.</div>
+            <div id="zoom-div">
+                <button id="fullscreen" onclick="openFullscreen();">
+                    <img src="./assets/fullscreen-1d71c043.png" alt="fullscreen"/>
+                </button>
+                <button id="exit-fullscreen" onclick="closeFullscreen();">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIzLTEwLTE4VDE1OjQ3OjA0KzA3OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMy0xMC0xOFQxNTo1NDoyOCswNzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0xMC0xOFQxNTo1NDoyOCswNzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2YTA0YmIwZC1lMWEwLTkx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" alt="exitfullscreen"/>
+                </button>
+            </div>
+        </div>
+        
+        <script src="js/ui-script.js"></script>
+        <script src="js/qrcode.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
